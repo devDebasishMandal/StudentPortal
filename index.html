@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h2>Student Portal</h2>
+        </div>
+    </header>
+    <main>
+        <form  id="form" class="search">
+            <!-- <div class="search"> -->
+                <input type="text" class="search-bar" name="name" placeholder="first name or last name or email">
+                <button class="search-btn" type="submit">Search</button>
+            <!-- </div> -->
+        </form>
+        <div class="functions">
+            <button class="sort-btn" type="submit">Sort A->Z</button>
+            <button class="sort-btn" type="submit">Sort Z->A</button>
+            <button class="sort-btn" type="submit">Sort By Marks</button>
+            <button class="sort-btn" type="submit">Sort By Passing</button>
+            <button class="sort-btn" type="submit">Sort By Class</button>
+            <button class="sort-btn" type="submit">Sort By Gender</button>
+        </div>
+
+        <div class="data-table">
+            <table id="student-table" class="table">
+                <thead>
+                    <tr class="table-header">
+                        <th class="t-id">ID</th>
+                        <th class="t-name">Name</th>
+                        <th class="t-gender">Gender</th>
+                        <th class="t-class">Class</th>
+                        <th class="t-marks">Marks</th>
+                        <th class="t-passing">Passing</th>
+                        <th class="t-email">Email</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td class="id">0</td>
+                        <td class="name">Hinata Hyuga</td>
+                        <td class="gender">Female</td>
+                        <td class="class">11</td>
+                        <td class="marks">88</td>
+                        <td class="passing">Passed</td>
+                        <td class="email">hinataUzumaki@leaf.com</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </main>
+    <!-- CHILD -->
+    <script type="module" src="data.js"></script>
+    <!-- parent  -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
